@@ -1,0 +1,515 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: time zone 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: time zone 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 04564600c8f14039a67cf4a0342d33c9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID c2ad2ccea50a460e858715769cd08f70
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 5d55f033a861429ba11348f84072222d
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: class length affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: class length deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: class length deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: lesson plan affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: lesson plan deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: lesson plan deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: Certificate affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: certificate
+  - action: utter_certificate
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: Certificate deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: certificate
+  - action: utter_certificate
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: Certificate deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: certificate
+  - action: utter_certificate
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 3ebf9fa5daaf44e5a215d9dd6a777325
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: certificate
+  - action: utter_certificate
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_how_else_can_i_help_you
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: mood_great
+  - action: utter_goodbye
+- story: reschedule affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: reschedule
+  - action: utter_reschedule
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: reschedule deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: reschedule
+  - action: utter_reschedule
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: reschedule deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: reschedule
+  - action: utter_reschedule
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: job affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: job
+  - action: utter_job
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: job deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: job
+  - action: utter_job
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: job deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: job
+  - action: utter_job
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: donation affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: donation
+  - action: utter_donation
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: donation deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: donation
+  - action: utter_donation
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: donation deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: donation
+  - action: utter_donation
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: user_exists affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: user_exists
+  - action: utter_user_exists
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: user_exists deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: user_exists
+  - action: utter_user_exists
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: user_exists deny2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: user_exists
+  - action: utter_user_exists
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: volunteer affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: volunteer
+  - action: utter_volunteer
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: issues affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: issues
+  - action: utter_issues
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 8affef9e9b5c42e4b5d2e308d197893d
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: volunteer
+  - action: utter_volunteer
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 563b525b881e4e129d871fb9531fd0ac
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_may_I_help_you
+  - intent: helpline
+  - action: utter_helpline
+  - intent: certificate
+  - action: utter_certificate
+  - intent: issues
+  - action: utter_issues
+  - intent: donation
+  - action: utter_donation
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_how_else_can_i_help_you
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID f24414edd0284bf0a729eb5329c206dc
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+  - intent: helpline
+  - action: utter_helpline
+- story: Story from Conversation ID 01bd863c29cc491ebbc8c82118011102
+  steps:
+  - intent: job
+  - action: utter_job
+- story: Story from Conversation ID c4f962410c5a456986fed92182469bfc
+  steps:
+  - intent: time_zone
+  - action: utter_ist
+- story: Story from Conversation ID 32ffb37c087149429b72151a75a9574f
+  steps:
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_how_else_can_i_help_you
+- story: Story from Conversation ID 8dca4fcdd5434f2095cf6b60b140afe9
+  steps:
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+- story: Story from Conversation ID 7e4a297819a54425937b8e38a05f8035
+  steps:
+  - intent: reschedule
+  - action: utter_reschedule
+- story: Story from Conversation ID 9c8a6d84d4ab438f952e639becc74232
+  steps:
+  - intent: job
+  - action: utter_job
+- story: Story from Conversation ID 1b312d7db43c47188339d3360fc50f2a
+  steps:
+  - intent: donation
+  - action: utter_donation
+- story: Story from Conversation ID 1b312d7db43c47188339d3360fc50f2a
+  steps:
+  - intent: donation
+  - action: utter_donation
+- story: Story from Conversation ID 65257578d4194024815fad8eb13a3926
+  steps:
+  - intent: user_exists
+  - action: utter_user_exists
+- story: Story from Conversation ID 14cf64cce7094d86b63a6ac44e363c05
+  steps:
+  - intent: staff_onboarding
+  - action: utter_onboarding
+- story: Story from Conversation ID a8119e9bdd364dfca9b4f6bf6757bd13
+  steps:
+  - intent: certificate
+  - action: utter_certificate
+- story: Story from Conversation ID 9a53d3f91b4b433b9d1d1d1227999c2e
+  steps:
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+- story: Story from Conversation ID 12b8725266184453a1bf0356334d4b97
+  steps:
+  - intent: content_development
+  - action: utter_content_development
+- story: Story from Conversation ID 56c368210e574be0a988a2d47ae2456b
+  steps:
+  - intent: content_development
+  - action: utter_content_development
+- story: Story from Conversation ID 590c5a3f60ea4635b262b200c40273d5
+  steps:
+  - intent: my_class
+  - action: utter_my_class
+- story: Story from Conversation ID 1b33f42c7717496dad39fc654dba673c
+  steps:
+  - intent: paid
+  - action: utter_paid
+- story: Story from Conversation ID bcf4c7552ad44d339d558ce46aa773c9
+  steps:
+  - intent: eVidyaloka
+  - action: utter_evidyaloka
+- story: Story from Conversation ID 78cddc1e2428480ca72c5100e40f5043
+  steps:
+  - intent: language_fluency
+  - action: utter_language_fluency
+- story: Story from Conversation ID 426f42b3ed3c41688aaf3775b5d531e4
+  steps:
+  - intent: school_center
+  - action: utter_school_center

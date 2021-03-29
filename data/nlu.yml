@@ -1,0 +1,270 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - helo
+    - hi
+    - hi hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - yes, bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - okay
+    - ok
+    - right
+    - yeah
+    - ys
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - dont
+    - none
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - Awesome
+    - good
+    - good, thanks
+    - nothing much, thanks
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+- intent: time_zone
+  examples: |
+    - what time zone will we be working?
+    - what is the time zone?
+    - time zone?
+    - time zone
+    - what tim zone we wil be working?
+    - Are these time in India time or US time?
+    - At what time are the classes held?
+    - What are the timings of the classes?
+    - what time zone will we be teahciing? inidia or USA?
+- intent: class_duration
+  examples: |
+    - class length?
+    - How long will the classes be?
+    - what is the duration of the class?
+    - class duration
+    - length of the session
+    - length of classes?
+    - what is the minimum commitment?
+    - how long wil lthe classes be?
+    - what will be the class duration?
+- intent: lesson_plan
+  examples: |
+    - will eVidyaloka provide lesson plan?
+    - who will give is the materials?
+    - materials
+    - lesson plan
+    - who wil give us books to teach?
+    - syllabus?
+    - will you share us the syllabus?
+    - will you provide us the materials?
+    - how can i access the materials?
+    - What are the resources available to teach the children?
+    - How to teach the students?
+    - where can i get the lesson plan?
+    - training resource?
+- intent: certificate
+  examples: |
+    - will we receive certificate for voluteering activites?
+    - can I get a certificate for teaching?
+    - certificate for voluteering
+    - will I get certificate?
+    - will I get a certificate?
+    - will i get certificate if i volunteer?
+    - wil i get ceritificatE?
+- intent: reschedule
+  examples: |
+    - I want to reschedule my class
+    - Can I reschedule ?
+    - Can I reschedule my classes?
+    - how can I reschedule my classes?
+    - reschedule
+    - resedule
+    - can i reschedulles the classes?
+- intent: job
+  examples: |
+    - I want a job in eVidyaloka
+    - how can i know about jobs?
+    - How to know about careers in eVidyaloka
+    - I want job
+    - job
+    - careers
+    - how can i get a job in evidyaloka?
+    - can i get a job?
+- intent: donation
+  examples: |
+    - How can I donate?
+    - I would like to Donate
+    - I can give donation
+    - How to donate?
+    - i would like to donate
+    - how can i donate?
+- intent: user_exists
+  examples: |
+    - I get user already exists error
+    - user already exists
+    - getting user already exists error
+    - i get user exists error, but ihave not registered previously
+- intent: staff_onboarding
+  examples: |
+    - I need info on teacher on-boarding
+    - i want to know about staff on-boarding
+    - info on teaching joining
+    - i need to know about staff onboarding
+- intent: volunteer
+  examples: |
+    - I don't have time on weekdays, I will be happy if I can contribute on weekends.
+    - I have completed self evaluation for a content developer. What next?
+    - I want to volunteer for this cause.
+    - How can I get involved in this wonderful service?
+    - We want our employees to volunteer through evidyaloka, If you can further give us details on how can we contact you and volunteer?
+    - I am interested in volunteering opportunities you may have. Please tell me more about it.
+    - I would like to voluntter
+- intent: issues
+  examples: |
+    - Some technical support urgently needed to ensure screen sharing between my screen and the school screen.
+    - I am unable to open the Video in my Ipad.
+    - I am trying to login to the site but its not accepting my login details. Is there any technical problem with the website or its just issue an with my login credentials?
+    - Can I talk on filling the application form?
+    - I’m not able to log in to my account
+    - I need help and support.
+    - I need an agent to troubleshoot my issues.
+    - How can I contact an agent?
+    - but i am unable to login to th epotal
+    - no class is showing in my classroom
+    - I need some guidance as to where I should fill Co-Scholastic awards
+    - Main page is not loading properly, unable to see my classroom, todays attendance has not been loaded
+    - some technical support urgently needed to ensure screen sharing between my screen and the school screen
+    - please update the holiday list
+    - while filling, there is a message that 'the value is invalid'. can you help me
+- intent: resources
+  examples: |
+    - How to teach the students?
+    - What are the resources available to teach the children?
+    - Do any materials exist to teach the students?
+- intent: helpline
+  examples: |
+    - How do I contact eVidyaloka team?
+    - What is the helpline number?
+    - would like to talk to an agent
+    - helpline?
+- intent: my_class
+  examples: |
+    - How to see my class?
+    - how wil i teach?
+    - will I be able to see my students?
+    - how can i interact with students?
+    - How will the student ask for doubts in the class?
+    - Could you brief me about online teaching?
+    - how will the class happen?
+    - how will the classes happen?
+- intent: content_development
+  examples: |
+    - I want to know what is this content development all about
+    - what is content development job?
+    - I have registered as a content developer. Let me know how to begin.
+    - I have completed self evaluation for a content developer. what next?
+    - can i know about content development?
+- intent: paid
+  examples: |
+    - Will i be paid?
+    - can i get payment for teaching?
+    - will i get salary?
+    - Will i get payment for content development job?
+    - will i get paid for the work?
+- intent: eVidyaloka
+  examples: |
+    - what is eVidyaloka?
+    - please tell me about eVidyaloka?
+    - How eVidyaloka works?
+    - How eVidyaloka functions?
+    - tell me about evidyaloka.
+- intent: language_fluency
+  examples: |
+    - how fluent must one be to be able to teach the math and English portions of the classes?
+    - I cannot read or write the languages, how can i teach
+    - I dont know local language, how can i teach?
+    - I have no knowledge of other Indian languages.
+    - should i be fluent in any language to teach?
+- intent: school_center
+  examples: |
+    - Where are the schools located?
+    - how can i know about the schools?
+    - where wil i get school center info?
+    - school location?
+    - how can i know about the location of school center?
+- intent: nlu_fallback
+  examples: |
+    - jnujhklihjkjoi
