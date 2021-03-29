@@ -1,0 +1,122 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- time_zone:
+    use_entities: true
+- class_duration:
+    use_entities: true
+- lesson_plan:
+    use_entities: true
+- reschedule:
+    use_entities: true
+- job:
+    use_entities: true
+- donation:
+    use_entities: true
+- user_exists:
+    use_entities: true
+- staff_onboarding:
+    use_entities: true
+- certificate:
+    use_entities: true
+- volunteer:
+    use_entities: true
+- issues:
+    use_entities: true
+- resources:
+    use_entities: true
+- helpline:
+    use_entities: true
+- content_development:
+    use_entities: true
+- my_class:
+    use_entities: true
+- paid:
+    use_entities: true
+- eVidyaloka:
+    use_entities: true
+- language_fluency:
+    use_entities: true
+- school_center:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How can I help you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_may_I_help_you:
+  - text: May I help you?
+  utter_ist:
+  - text: Classes will take place in Indian Standard Time (IST) from 9 AM to 5PM.
+  utter_two_hours:
+  - text: Classes happen two hours each for two days in a week.
+  utter_how_else_can_i_help_you:
+  - text: How else can I help you?
+  utter_onboarding:
+  - text: Your State Delivery Coordinator will reach out to you within 48 hours and please check your mailbox as the initial communication will happen via email.
+  utter_lesson_plan:
+  - text: All the teaching materials will be provided by eVidyaloka team.
+  utter_certificate:
+  - text: Volunteer will receive the certificates if they complete 1 term which is generally 4-6 months.
+  utter_reschedule:
+  - text: Please reschedule using the link - https://www.evidyaloka.org/book_sd_slots/#teacher
+  utter_job:
+  - text: Please explore the careers in eVidyaloka - https://www.evidyaloka.org/careers/
+  utter_donation:
+  - text: Please use this link for donation - https://www.evidyaloka.org/sponsor/
+  utter_user_exists:
+  - text: It seems you are already a volunteer in eVidyaloka. Please try resetting your password and login again, for future assistance please reach out to volunteer helpline +91-80-46808983
+  utter_volunteer:
+  - text: You can volunteer as an online teacher or as a content developer. Please register to the website, fill up your profile, select the preferred role and book a discussion slot to discuss with our panel. For more information, reach out the volunteer helpline - +91-80-46808983.
+  utter_issues:
+  - text: Please connect with your Center Admin or State Delivery coordinator. If you would like an agent to connect with you, please enter the details [here.] (https://www.mylivechat.com/chatnoscript.aspx?HCCID=70724496) You can also reach out to the Volunteer Helpline +91-80-46808983 for further support.
+  utter_helpline:
+  - text: Please contact the volunteer helpline +91-80-46808983 or you can contact an agent [Chat with an agent] (https://www.mylivechat.com/chatnoscript.aspx?HCCID=70724496).
+  utter_my_class:
+  - text: All the interactions/communication/teaching happens via Skype.
+  utter_content_development:
+  - text: Content Development is all about help creating teaching materials. Once you have registered and your self-evaluation is complete, book a discussion slot to discuss with our panel member - https://www.evidyaloka.org/book_sd_slots/?csrfmiddlewaretoken=eybc9pNZbgw6BTgZSELjZPMCpxkj8KWQ&slots_role=Content+Developer#teacher
+  utter_paid:
+  - text: There will be NO payments or stipends to the volunteers as this is a non-profit organization.
+  utter_evidyaloka:
+  - text: eVidyaloka sets up a digital classroom.  In a digital classroom there will be 40’’ LED TV, a high power camera, a conference mic and BSNL broadband connection. We connect the passionate teaching volunteers to provide quality education for the rural children of India. The volunteer teachers can teach from anywhere across the globe through online over Skype for 2 hours in a week.
+  utter_language_fluency:
+  - text: As your teaching rural children of India who study in Government schools, one should know to read, write and speak in any one of the Indian regional languages
+  utter_school_center:
+  - text: Please visit - https://www.evidyaloka.org/v2/centerNew
+  utter_rephrase:
+  - text: Please rephrase your query.
+actions: []
+forms: {}
+e2e_actions: []
