@@ -59,6 +59,8 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
+- action_default_fallback:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -68,7 +70,7 @@ responses:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: Did that help you?
+  - text: Is there anything I can help you with?
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
@@ -115,8 +117,8 @@ responses:
   - text: As your teaching rural children of India who study in Government schools, one should know to read, write and speak in any one of the Indian regional languages
   utter_school_center:
   - text: Please visit - https://www.evidyaloka.org/v2/centerNew
-  utter_rephrase:
-  - text: Please rephrase your query.
+  utter_default:
+  - text: Can you please rephrase?
 actions: []
 forms: {}
 e2e_actions: []
