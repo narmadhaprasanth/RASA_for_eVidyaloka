@@ -9,8 +9,6 @@ pipeline:
   - name: SpacyNLP
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
-  # - name: ConveRTTokenizer
-  - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -19,14 +17,18 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     epochs: 100
-  - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
-    # retreival_intent: faq
   - name: FallbackClassifier
     threshold: 0.3
     ambiguity_threshold: 0.3
     fallback_action_name: "utter_rephrase"
+  # - name: TwoStageFallbackPolicy
+  #   nlu_threshold: 0.9
+  #   core_threshold: 0.9
+  #   fallback_core_action_name: "action_default_fallback"
+  #   fallback_nlu_action_name: "action_default_fallback"
+  #   deny_suggestion_intent_name: "utter_rephrase"
      
 
 # Configuration for Rasa Core.
@@ -42,3 +44,7 @@ policies:
     epochs: 100
     constrain_similarities: true
   - name: RulePolicy
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
+

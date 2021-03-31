@@ -23,7 +23,123 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_default
+- story: sad path 3
+  steps:
+  - intent: time_zone
+  - action: utter_ist
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+- story: sad path 4
+  steps:
+  - intent: class_duration
+  - action: utter_two_hours
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+- story: sad path 5
+  steps:
+  - intent: lesson_plan
+  - action: utter_lesson_plan
+  - intent: deny
+  - action: utter_default
+- story: sad path 6
+  steps:
+  - intent: certificate
+  - action: utter_certificate
+  - intent: deny
+  - action: utter_default
+- story: sad path 7
+  steps:
+  - intent: reschedule
+  - action: utter_reschedule
+  - intent: deny
+  - action: utter_default
+- story: sad path 8
+  steps:
+  - intent: job
+  - action: utter_job
+  - intent: deny
+  - action: utter_default
+- story: sad path 9
+  steps:
+  - intent: donation
+  - action: utter_donation
+  - intent: deny
+  - action: utter_default
+- story: sad path 10
+  steps:
+  - intent: user_exists
+  - action: utter_user_exists
+  - intent: deny
+  - action: utter_default
+- story: sad path 11
+  steps:
+  - intent: staff_onboarding
+  - action: utter_user_exists
+  - intent: deny
+  - action: utter_default
+- story: sad path 12
+  steps:
+  - intent: volunteer
+  - action: utter_volunteer
+  - intent: deny
+  - action: utter_default
+- story: sad path 13
+  steps:
+  - intent: issues
+  - action: utter_issues
+  - intent: deny
+  - action: utter_default
+- story: sad path 14
+  steps:
+  - intent: resources
+  - action: utter_lesson_plan
+  - intent: deny
+  - action: utter_default
+- story: sad path 15
+  steps:
+  - intent: helpline
+  - action: utter_helpline
+  - intent: deny
+  - action: utter_default
+- story: sad path 16
+  steps:
+  - intent: my_class
+  - action: utter_my_class
+  - intent: deny
+  - action: utter_default
+- story: sad path 17
+  steps:
+  - intent: content_development
+  - action: utter_content_development
+  - intent: deny
+  - action: utter_default
+- story: sad path 18
+  steps:
+  - intent: paid
+  - action: utter_paid
+  - intent: deny
+  - action: utter_default
+- story: sad path 19
+  steps:
+  - intent: eVidyaloka
+  - action: utter_evidyaloka
+  - intent: deny
+  - action: utter_default
+- story: sad path 20
+  steps:
+  - intent: language_fluency
+  - action: utter_language_fluency
+  - intent: deny
+  - action: utter_default
+- story: sad path 21
+  steps:
+  - intent: school_center
+  - action: utter_school_center
+  - intent: deny
+  - action: utter_default
 - story: time zone 1
   steps:
   - intent: greet
@@ -50,7 +166,7 @@ stories:
   - action: utter_ist
   - action: utter_did_that_help
   - intent: affirm
-  - action: utter_goodbye
+  - action: utter_happy
 - story: Story from Conversation ID c2ad2ccea50a460e858715769cd08f70
   steps:
   - intent: greet
@@ -430,12 +546,12 @@ stories:
   - action: utter_how_else_can_i_help_you
   - intent: deny
   - action: utter_goodbye
-- story: Story from Conversation ID f24414edd0284bf0a729eb5329c206dc
-  steps:
-  - intent: nlu_fallback
-  - action: action_default_fallback
-  - intent: helpline
-  - action: utter_helpline
+# - story: Story from Conversation ID f24414edd0284bf0a729eb5329c206dc
+#   steps:
+#   - intent: nlu_fallback
+#   - action: utter_default
+#   - intent: helpline
+#   - action: utter_helpline
 - story: Story from Conversation ID 01bd863c29cc491ebbc8c82118011102
   steps:
   - intent: job
@@ -513,3 +629,19 @@ stories:
   steps:
   - intent: school_center
   - action: utter_school_center
+# - story: Story from Conversation ID f25353e81dc24254ac5c7a9f77504cb0
+#   steps:
+#   - action: utter_default
+#   - intent: nlu_fallback
+#   - action: utter_default
+#   - action: utter_default
+# - story: Story from Conversation ID cfd6cf984e9a49c491581e3d61cbd25b
+#   steps:
+#   - action: utter_default
+#   - intent: nlu_fallback
+#   - action: utter_default
+# - story: Story from Conversation ID 862cbcca64d94f51a346ed3cb5ed57d2
+#   steps:
+#   - action: utter_default
+#   - intent: nlu_fallback
+#   - action: utter_default
